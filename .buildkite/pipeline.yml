@@ -4,8 +4,8 @@ steps:
   - id: "lint"
     name: ":bash: Lint"
     command: .buildkite/steps/lint.sh
-    agents:
-      queue: "${BUILDKITE_AGENT_META_DATA_QUEUE}"
+    # agents:
+    #   queue: "${BUILDKITE_AGENT_META_DATA_QUEUE}"
 
   - id: "bats-tests"
     name: ":bash: Unit tests"
